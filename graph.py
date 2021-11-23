@@ -95,7 +95,7 @@ if __name__ == '__main__':
     df = df / df.loc['09:30:00']
     mean = df.mean(axis=1)
 
-    ax = df.plot(legend=False, linewidth=0.4, color='white')
+    ax = df.plot(legend=False, linewidth=0.4, color='grey')
     mean.plot(ax=ax, linewidth=0.5, color='red')
 
     ax.axvspan(
